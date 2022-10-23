@@ -13,6 +13,15 @@ function ShiftColor (num: number) {
 input.onButtonPressed(Button.B, function () {
     Step += -1
 })
+function SetColorHsv () {
+    Hue += 8
+    Color = neopixel.hsl(Hue, 255, 255)
+    strip.showColor(Color)
+    strip.setPixelColor(0, neopixel.rgb(0, 255, 255))
+    strip.show()
+}
+let Color = 0
+let Hue = 0
 let Left: neopixel.Strip = null
 let Right: neopixel.Strip = null
 let strip: neopixel.Strip = null
