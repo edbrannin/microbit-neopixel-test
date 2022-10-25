@@ -35,6 +35,7 @@ RainbowStart = 1
 Step = 1
 EarOffset = 180
 strip = neopixel.create(DigitalPin.P2, 16, NeoPixelMode.RGB)
+strip.setBrightness(64)
 Right = strip.range(0, 8)
 Left = strip.range(8, 8)
 Update()
