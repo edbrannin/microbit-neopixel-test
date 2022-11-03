@@ -1,5 +1,5 @@
 {
-    "name": "NeoPixel Test",
+    "name": "cruise",
     "description": "",
     "dependencies": {
         "core": "*",

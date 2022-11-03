@@ -10,6 +10,9 @@ input.onButtonPressed(Button.A, function () {
 function ShiftColor (num: number) {
     return (RainbowStart + num) % 360
 }
+input.onButtonPressed(Button.AB, function () {
+    EarOffset += 10
+})
 input.onButtonPressed(Button.B, function () {
     Step += -1
 })
@@ -33,9 +36,9 @@ let frameDelay = 5
 range = 10
 RainbowStart = 1
 Step = 1
-EarOffset = 180
+EarOffset = 0
 strip = neopixel.create(DigitalPin.P2, 16, NeoPixelMode.RGB)
-strip.setBrightness(64)
+strip.setBrightness(172)
 Right = strip.range(0, 8)
 Left = strip.range(8, 8)
 Update()
